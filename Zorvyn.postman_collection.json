@@ -1,0 +1,243 @@
+{
+  "info": {
+    "_postman_id": "cbc8b574-4a04-4631-93c5-d7e3cce93927",
+    "name": "Zorvyn",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "37279400"
+  },
+  "item": [
+    {
+      "name": "Updating user details",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PUT",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZDM0N2I0ODRmMjg2N2RjZTkwMDk3ZSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NTQ1NDc4NSwiZXhwIjoxNzc1NTQxMTg1fQ.0c5GmfXYq4_Pyw0kcTBwcaUREKkwY66tECRv0txirDE",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\":\"lavanya_p\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/user",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "user"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Creating new user",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\":\"vinay\",\r\n    \"email\":\"vinay@gmail.com\",\r\n    \"role\":\"admin\"\r\n}"
+        },
+        "url": {
+          "raw": "localhost:3000/user",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "user"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deleting a user",
+      "request": {
+        "method": "DELETE",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\":\"vinay@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/login",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "login"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create a record",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZDM1NWZjNTBmMjU1MjE4ZDY2N2M0NyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NTQ1NzkyMiwiZXhwIjoxNzc1NTQ0MzIyfQ.cHeZtJlMUsWevFX-I5qQ9SZ9jo2vHSiZi04snY_r9cY",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"amount\":\"10\",\r\n    \"type\":\"expense\",\r\n    \"category\":\"food\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/records",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "records"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Updating a record",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZDM1NWZjNTBmMjU1MjE4ZDY2N2M0NyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NTQ1NzkyMiwiZXhwIjoxNzc1NTQ0MzIyfQ.cHeZtJlMUsWevFX-I5qQ9SZ9jo2vHSiZi04snY_r9cY",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"amount\":\"100\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:3000/records/69d3575a50f255218d667c49",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "records",
+            "69d3575a50f255218d667c49"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deleting a record",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZDM1NWZjNTBmMjU1MjE4ZDY2N2M0NyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc3NTQ1NzkyMiwiZXhwIjoxNzc1NTQ0MzIyfQ.cHeZtJlMUsWevFX-I5qQ9SZ9jo2vHSiZi04snY_r9cY",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "localhost:3000/records/69d3575a50f255218d667c49",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "records",
+            "69d3575a50f255218d667c49"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Total summary",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Filter by category and/or type",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Weekly trends",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Monthly trends",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Recent activity",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Filter by date",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
