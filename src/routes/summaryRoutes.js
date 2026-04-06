@@ -5,7 +5,6 @@ const controller = require("../controllers/summaryController");
 const authorize = require("../middlewares/authorize");
 const auth = require("../middlewares/auth");
 
-// Summary base
 router.get("/category", auth, authorize(["analyst", "admin"]), controller.getCategoryTotals);
 
 router.get("/recent", auth,authorize(["analyst", "admin"]), controller.getRecentActivity);

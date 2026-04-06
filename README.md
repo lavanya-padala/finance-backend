@@ -1,6 +1,6 @@
 # Finance Data Processing & Access Control Backend
 
-## 📌 Overview
+## Overview
 
 This project is a backend system for a finance dashboard.
 It allows users to manage financial records and view summary analytics based on their role.
@@ -14,7 +14,7 @@ The system includes:
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 * Node.js
 * Express.js
@@ -22,11 +22,11 @@ The system includes:
 
 ---
 
-## 🔐 Authentication (Simplified for Testing)
+## Authentication (Simplified for Testing)
 
 Authentication is implemented using **JWT (JSON Web Token)**.
 
-⚠️ Note:
+Note:
 
 * Password is **not used** in this project.
 * Users login using only their **email**.
@@ -100,7 +100,7 @@ Authentication is implemented using **JWT (JSON Web Token)**.
 
 ---
 
-### 👤 Users
+### Users
 
 * `POST /api/users` → Create user 
 * `PUT /api/users` → Update user 
@@ -108,7 +108,7 @@ Authentication is implemented using **JWT (JSON Web Token)**.
 
 ---
 
-### 💰 Records
+### Records
 
 * `POST /api/records` → Create record (Admin)
 * `GET /api/records` → Get records (All)
@@ -117,7 +117,7 @@ Authentication is implemented using **JWT (JSON Web Token)**.
 
 ---
 
-### 📊 Summary
+### Summary
 
 * `GET /api/summary/category`
 * `GET /api/summary/monthly`
@@ -126,7 +126,7 @@ Authentication is implemented using **JWT (JSON Web Token)**.
 
 ---
 
-## 🧪 How to Run
+## How to Run
 
 1. Install dependencies:
 
@@ -150,7 +150,7 @@ node server.js
 
 ---
 
-## 🔑 How to Test APIs
+## How to Test APIs
 
 ### Step 1: Create a User
 
